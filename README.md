@@ -14,3 +14,9 @@ dot]` to launch.
 
 * This is currently tailored towards [TextGrid](http://www.textgrid.de/) usage.
 * Packages starting with `org.eclipse` will be left out from the graph.
+
+## Requirements
+
+* saxon
+* dot
+* curl and jar for the handling of remote repositories
