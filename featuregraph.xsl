@@ -14,7 +14,9 @@
             
             <!-- nodes: -->
             <xsl:for-each select=".//provided[@namespace='org.eclipse.equinox.p2.iu' and fn:useThisName(@name)]">
-                <xsl:value-of select="fn:toName(@name)"/> [ label = "<xsl:value-of select="fn:formatName(@name)"/>" ]
+                <xsl:value-of select="fn:toName(@name)"/> [ label = &lt;<xsl:value-of select="fn:formatName(@name)"/> &lt;BR/&gt;
+                &lt;FONT POINT-SIZE="10" COLOR="gray30"&gt;<xsl:value-of select="@version"/>&lt;/FONT&gt;
+                &gt; ]
             </xsl:for-each>
                 
             
